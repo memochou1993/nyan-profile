@@ -1,6 +1,12 @@
 {
   "theme": {
-    "dark": true
+    "mode": "dark",
+    "light": {
+      "background": "#93c5fd"
+    },
+    "dark": {
+      "background": "#111827"
+    }
   },
   "meta": {
     "author": "The Octocat",

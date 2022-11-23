@@ -1,3 +1,5 @@
+const config = require('./assets/config.json');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
@@ -6,7 +8,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'light-bg': config.theme.light.background,
+        'dark-bg': config.theme.dark.background,
+      },
+    },
   },
   plugins: [],
 };

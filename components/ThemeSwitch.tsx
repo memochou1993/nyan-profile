@@ -1,7 +1,7 @@
 import React, {
+  useMemo,
   useState,
 } from 'react';
-import colors from 'tailwindcss/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSun,
@@ -10,11 +10,12 @@ import {
 import config from '../assets/config.json';
 
 export default function ThemeSwitch() {
-  const [isDark, setIsDark] = useState(config.theme.dark);
+  const [mode, setMode] = useState(config.theme.mode);
+  const isDark = useMemo(() => mode === 'dark', [mode]);
   const handleClick = () => {
-    document.documentElement.style.setProperty('background-color', colors.slate[isDark ? 300 : 900]);
+    document.documentElement.style.setProperty('background-color', isDark ? config.theme.light.background : config.theme.dark.background);
     document.getElementById('app')?.classList.toggle('dark');
-    setIsDark(!isDark);
+    setMode(isDark ? 'light' : 'dark');
   };
   return (
     <button type="button" onClick={handleClick}>

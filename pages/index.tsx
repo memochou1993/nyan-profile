@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
-import colors from 'tailwindcss/colors';
 import {
   About,
   Divider,
@@ -17,10 +16,10 @@ import config from '../assets/config.json';
 
 export default function Home() {
   useEffect(() => {
-    document.documentElement.style.setProperty('background-color', colors.slate[config.theme.dark ? 900 : 300]);
+    document.documentElement.style.setProperty('background-color', config.theme.mode === 'dark' ? config.theme.dark.background : config.theme.light.background);
   }, []);
   return (
-    <div id="app" className={`${config.theme.dark ? 'dark' : ''}`}>
+    <div id="app" className={config.theme.mode}>
       <Head>
         <link rel="icon" href="/favicon.png" />
         <title>{config.meta.title}</title>
@@ -33,7 +32,7 @@ export default function Home() {
         <meta property="og:image:alt" content={config.meta.title} />
         <meta property="og:image:type" content="image/png" />
       </Head>
-      <div className="min-h-screen bg-slate-300 dark:bg-slate-900">
+      <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
           { config.layout.header.enabled && <Header /> }
           <main className="my-12">
