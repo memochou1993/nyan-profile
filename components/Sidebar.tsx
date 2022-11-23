@@ -6,7 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowUp,
 } from '@fortawesome/free-solid-svg-icons';
-import config from '../assets/config.json';
+import {
+  useAnchors,
+} from 'hooks';
 
 const OFFSET = 4 * 12 + 28;
 
@@ -14,6 +16,7 @@ export default function Elevator() {
   const mounted = useRef(false);
   const element = useRef(null);
   const visible = useRef(false);
+  const anchors = useAnchors();
   useEffect(() => {
     const target = element.current as HTMLElement | null;
     if (mounted.current) return;
@@ -46,7 +49,7 @@ export default function Elevator() {
           </button>
         </div>
         <nav>
-          {config.section.items.map(({ text }) => (
+          {anchors.map((text) => (
             <div key={text} className="mt-2">
               <a href={`#${String(text).toLowerCase()}`}>
                 <span className="hover:underline hover:decoration-1 hover:underline-offset-4">

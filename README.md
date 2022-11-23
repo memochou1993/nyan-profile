@@ -68,13 +68,6 @@ Update `assets/config.json` file.
       "enabled": true
     }
   },
-  "section": {
-    "items": [
-      {
-        "text": "About"
-      }
-    ]
-  },
   "socialLinks": {
     "github": {
       "enabled": true,

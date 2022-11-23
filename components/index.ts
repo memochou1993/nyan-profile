@@ -6,3 +6,5 @@ export { default as Heading } from './Heading';
 export { default as Profile } from './Profile';
 export { default as Sidebar } from './Sidebar';
 export { default as ThemeSwitch } from './ThemeSwitch';
+
+export default null;
