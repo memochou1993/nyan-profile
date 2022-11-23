@@ -1,8 +1,10 @@
 # My Profile
 
+![Dark Theme](demo.png)
+
 ## Demo
 
-![Dark Theme](demo.png)
+- [https://memochou1993.github.io/my-profile/](https://memochou1993.github.io/my-profile/)
 
 ## Getting Started
 
@@ -12,13 +14,13 @@ Install dependencies.
 npm ci
 ```
 
-Compiles and hot-reloads for development
+Compiles and hot-reloads for development.
 
 ```bash
 npm run dev
 ```
 
-Generates static project
+Generates static project.
 
 ```bash
 npm run build
@@ -104,6 +106,42 @@ Update `assets/config.json` file.
     "id": ""
   }
 }
+```
+
+## Deployment
+
+### GitHub Pages
+
+Update `next.config.js` file.
+
+```js
+const nextConfig = {
+  basePath: '/my-profile',
+};
+```
+
+Push to GitHub.
+
+```bash
+git add .
+git commit -m "Update next.config.js"
+git push
+```
+
+### Docker Compose
+
+Update `next.config.js` file.
+
+```js
+const nextConfig = {
+  basePath: '',
+};
+```
+
+Build and run app.
+
+```bash
+docker compose up -d
 ```
 
 ## Contributors
