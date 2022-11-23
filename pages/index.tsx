@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div id="app" className={config.theme.mode}>
       <Head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="favicon.png" />
         <title>{config.meta.title}</title>
         <meta name="author" content={config.meta.author} />
         <meta name="description" content={config.meta.description} />
