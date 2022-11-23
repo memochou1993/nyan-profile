@@ -9,17 +9,17 @@
     }
   },
   "meta": {
-    "author": "The Octocat",
-    "title": "The Octocat",
+    "author": "Memo Chou",
+    "title": "Memo's Profile",
     "description": "The complete developer platform to build, scale, and deliver secure software.",
-    "image": "https://github.com/octocat.png"
+    "image": "https://github.com/memochou1993.png"
   },
   "profile": {
-    "name": "The Octocat",
-    "organization": "GitHub",
-    "email": "octocat@github.com",
-    "location": "San Francisco",
-    "url": "https://github.blog"
+    "name": "Memo Chou",
+    "organization": "",
+    "email": "memochou1993@gmail.com",
+    "location": "Taipei, Taiwan",
+    "url": "https://profile.epoch.tw"
   },
   "layout": {
     "header": {
