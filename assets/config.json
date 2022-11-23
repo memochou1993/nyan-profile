@@ -1,0 +1,69 @@
+{
+  "theme": {
+    "dark": true
+  },
+  "meta": {
+    "author": "The Octocat",
+    "title": "The Octocat",
+    "description": "The complete developer platform to build, scale, and deliver secure software.",
+    "image": "https://github.com/octocat.png"
+  },
+  "profile": {
+    "name": "The Octocat",
+    "organization": "GitHub",
+    "email": "octocat@github.com",
+    "location": "San Francisco",
+    "url": "https://github.blog"
+  },
+  "layout": {
+    "header": {
+      "enabled": true
+    },
+    "themeSwitch": {
+      "enabled": true
+    },
+    "sidebar": {
+      "enabled": true
+    },
+    "footer": {
+      "enabled": true
+    }
+  },
+  "section": {
+    "items": [
+      {
+        "text": "About"
+      }
+    ]
+  },
+  "socialLinks": {
+    "github": {
+      "enabled": true,
+      "id": ""
+    },
+    "facebook": {
+      "enabled": true,
+      "id": ""
+    },
+    "linkedin": {
+      "enabled": true,
+      "id": ""
+    },
+    "instagram": {
+      "enabled": true,
+      "id": ""
+    },
+    "telegram": {
+      "enabled": true,
+      "id": ""
+    },
+    "twitter": {
+      "enabled": true,
+      "id": ""
+    }
+  },
+  "googleAnalytics": {
+    "enabled": true,
+    "id": ""
+  }
+}
