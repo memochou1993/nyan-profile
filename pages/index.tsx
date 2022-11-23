@@ -45,7 +45,7 @@ export default function Home() {
           { config.layout.footer.enabled && <Footer /> }
         </div>
       </div>
-      {config.googleAnalytics.enabled && (
+      {config.googleAnalytics.id && (
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.id}`}

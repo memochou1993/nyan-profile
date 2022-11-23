@@ -70,32 +70,25 @@ Update `assets/config.json` file.
   },
   "socialLinks": {
     "github": {
-      "enabled": true,
       "id": ""
     },
     "facebook": {
-      "enabled": true,
       "id": ""
     },
     "linkedin": {
-      "enabled": true,
       "id": ""
     },
     "instagram": {
-      "enabled": true,
       "id": ""
     },
     "telegram": {
-      "enabled": true,
       "id": ""
     },
     "twitter": {
-      "enabled": true,
       "id": ""
     }
   },
   "googleAnalytics": {
-    "enabled": true,
     "id": ""
   }
 }

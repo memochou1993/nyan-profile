@@ -20,32 +20,32 @@ import config from '../assets/config.json';
 const links = [
   {
     icon: faGithub,
-    enabled: config.socialLinks.github.enabled,
+    enabled: !!config.socialLinks.github.id,
     url: `https://github.com/${config.socialLinks.github.id}`,
   },
   {
     icon: faFacebook,
-    enabled: config.socialLinks.facebook.enabled,
+    enabled: !!config.socialLinks.facebook.id,
     url: `https://www.facebook.com/${config.socialLinks.facebook.id}`,
   },
   {
     icon: faLinkedin,
-    enabled: config.socialLinks.linkedin.enabled,
+    enabled: !!config.socialLinks.linkedin.id,
     url: `https://linkedin.com/in/${config.socialLinks.linkedin.id}`,
   },
   {
     icon: faInstagram,
-    enabled: config.socialLinks.instagram.enabled,
+    enabled: !!config.socialLinks.instagram.id,
     url: `https://www.instagram.com/${config.socialLinks.instagram.id}`,
   },
   {
     icon: faTelegram,
-    enabled: config.socialLinks.telegram.enabled,
+    enabled: !!config.socialLinks.telegram.id,
     url: `https://telegram.me/${config.socialLinks.telegram.id}`,
   },
   {
     icon: faTwitter,
-    enabled: config.socialLinks.twitter.enabled,
+    enabled: !!config.socialLinks.twitter.id,
     url: `https://twitter.com/${config.socialLinks.twitter.id}`,
   },
 ];
@@ -107,7 +107,7 @@ export default function Profile() {
               </div>
             )}
           </div>
-          <div className={`flex items-center justify-${links.filter(({ enabled }) => enabled).length > 4 ? 'between' : 'evenly'}`}>
+          <div className={`flex items-center ${links.filter(({ enabled }) => enabled).length > 4 ? 'justify-between' : 'justify-evenly'}`}>
             {links.map(({ icon, enabled, url }) => (
               enabled && (
                 <a key={url} href={url} target="_blank" rel="noreferrer">
