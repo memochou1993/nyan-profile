@@ -35,14 +35,14 @@ export default function Home() {
       <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
           { config.layout.header.enabled && <Header /> }
+          { config.layout.sidebar.enabled && <Sidebar /> }
           <main className="my-12">
             <Profile />
             <Divider id="about" />
             <Heading text="About" />
             <About />
-            <Divider id="" />
           </main>
-          { config.layout.sidebar.enabled && <Sidebar /> }
+          <Divider id="" />
           { config.layout.footer.enabled && <Footer /> }
         </div>
       </div>
