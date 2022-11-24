@@ -39,6 +39,7 @@ Update `assets/config.json` file.
 
 ```json
 {
+  "basePath": "/nyan-profile",
   "theme": {
     "mode": "dark|light",
     "light": {
@@ -108,12 +109,12 @@ Update `assets/config.json` file.
 
 ### GitHub Pages
 
-Update `next.config.js` file.
+Update `assets/config.json` file.
 
-```js
-const nextConfig = {
-  basePath: '/my-profile',
-};
+```json
+{
+  "basePath": "/nyan-profile"
+}
 ```
 
 Push to GitHub.
@@ -126,12 +127,12 @@ git push
 
 ### Docker Compose
 
-Update `next.config.js` file.
+Update `assets/config.json` file.
 
-```js
-const nextConfig = {
-  basePath: '',
-};
+```json
+{
+  "basePath": ""
+}
 ```
 
 Build and run app.

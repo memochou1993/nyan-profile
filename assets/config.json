@@ -1,4 +1,5 @@
 {
+  "basePath": "/nyan-profile",
   "theme": {
     "mode": "dark",
     "light": {

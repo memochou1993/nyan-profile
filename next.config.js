@@ -1,10 +1,12 @@
+const config = require('./assets/config.json');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/my-profile' : '',
+  basePath: process.env.NODE_ENV === 'production' ? config.basePath : '',
 };
 
 module.exports = nextConfig;
