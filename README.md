@@ -1,18 +1,18 @@
-# My Profile
+# Nyan Profile
 
 ![Dark Theme](demo.png)
 
 ## Demo
 
-- [https://memochou1993.github.io/my-profile/](https://memochou1993.github.io/my-profile/)
+- [https://memochou1993.github.io/nyan-profile/](https://memochou1993.github.io/nyan-profile/)
 
 ## Getting Started
 
 Fork and clone the repository.
 
 ```bash
-git clone https://github.com/memochou1993/my-profile
-cd my-profile
+git clone https://github.com/memochou1993/nyan-profile
+cd nyan-profile
 ```
 
 Install dependencies.
@@ -143,8 +143,8 @@ docker compose up -d
 
 ## Contributors
 
-<a href="https://github.com/memochou1993/my-profile/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=memochou1993/my-profile" />
+<a href="https://github.com/memochou1993/nyan-profile/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=memochou1993/nyan-profile" />
 </a>
 
 ## License

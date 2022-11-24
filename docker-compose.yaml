@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    container_name: my-profile
+    container_name: nyan-profile
     build: .
     ports:
       - "${APP_PORT}:80"
