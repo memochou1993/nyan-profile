@@ -55,6 +55,9 @@
       "id": "kingnyan2"
     }
   },
+  "googleFonts": {
+    "family": "Roboto"
+  },
   "googleAnalytics": {
     "id": ""
   }

@@ -95,6 +95,9 @@ Update `assets/config.json` file.
       "id": ""
     }
   },
+  "googleFonts": {
+    "family": "Roboto"
+  },
   "googleAnalytics": {
     "id": ""
   }

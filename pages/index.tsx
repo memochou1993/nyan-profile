@@ -40,6 +40,7 @@ export default function Home() {
             <Divider id="about" />
             <Heading text="About" />
             <About />
+            <Divider id="" />
           </main>
           { config.layout.sidebar.enabled && <Sidebar /> }
           { config.layout.footer.enabled && <Footer /> }

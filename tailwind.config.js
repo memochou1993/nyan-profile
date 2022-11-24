@@ -8,6 +8,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      sans: [
+        config.googleFonts.family,
+        'Helvetica',
+        'Arial',
+        'sans-serif',
+      ].filter(Boolean),
+    },
     extend: {
       colors: {
         'light-bg': config.theme.light.background,
