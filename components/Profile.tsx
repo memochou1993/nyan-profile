@@ -72,6 +72,16 @@ export default function Profile() {
                 </div>
               </div>
             )}
+            {config.profile.location && (
+              <div className="flex items-center">
+                <div>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="w-3 mx-2" />
+                </div>
+                <div>
+                  {config.profile.location}
+                </div>
+              </div>
+            )}
             {config.profile.email && (
               <div className="flex items-center">
                 <div>
@@ -81,16 +91,6 @@ export default function Profile() {
                   <a href={`mailto:${config.profile.email}`} target="_blank" rel="noreferrer">
                     {config.profile.email}
                   </a>
-                </div>
-              </div>
-            )}
-            {config.profile.location && (
-              <div className="flex items-center">
-                <div>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} className="w-3 mx-2" />
-                </div>
-                <div>
-                  {config.profile.location}
                 </div>
               </div>
             )}
