@@ -18,7 +18,7 @@ export default function NavigationBar() {
           </a>
         ))}
       </div>
-      { config.layout.themeSwitch.enabled && <ThemeSwitch /> }
+      { config.components.themeSwitch.enabled && <ThemeSwitch /> }
     </nav>
   );
 }

@@ -41,7 +41,7 @@ Update `assets/config.json` file.
 {
   "basePath": "/nyan-profile",
   "theme": {
-    "mode": "dark|light",
+    "mode": "light|dark",
     "light": {
       "background": "#93c5fd"
     },

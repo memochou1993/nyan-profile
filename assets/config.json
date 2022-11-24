@@ -22,7 +22,7 @@
     "location": "The United Kingdom of Great Nyan",
     "url": "https://kingnyan2.com"
   },
-  "layout": {
+  "components": {
     "header": {
       "enabled": true
     },
@@ -34,6 +34,27 @@
     },
     "footer": {
       "enabled": true
+    },
+    "about": {
+      "enabled": true,
+      "title": "About"
+    },
+    "projectList": {
+      "enabled": true,
+      "title": "Projects",
+      "limit": 3,
+      "items": [
+        {
+          "name": "Nyan Profile",
+          "link": "https://memochou1993.github.io/nyan-profile/",
+          "image": "https://github.com/memochou1993/nyan-profile/raw/main/demo.png",
+          "tags": [
+            "2022",
+            "JavaScript"
+          ],
+          "action": "Demo"
+        }
+      ]
     }
   },
   "socialLinks": {

@@ -8,8 +8,8 @@ import {
   Divider,
   Footer,
   Header,
-  Heading,
   Profile,
+  ProjectList,
   Sidebar,
 } from '@/components';
 import config from '../assets/config.json';
@@ -34,16 +34,15 @@ export default function Home() {
       </Head>
       <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
-          { config.layout.header.enabled && <Header /> }
-          { config.layout.sidebar.enabled && <Sidebar /> }
+          { config.components.header.enabled && <Header /> }
+          { config.components.sidebar.enabled && <Sidebar /> }
           <main className="my-12">
             <Profile />
-            <Divider id="about" />
-            <Heading text="About" />
             <About />
+            { config.components.projectList.enabled && <ProjectList />}
           </main>
           <Divider />
-          { config.layout.footer.enabled && <Footer /> }
+          { config.components.footer.enabled && <Footer /> }
         </div>
       </div>
       {config.googleAnalytics.id && (
