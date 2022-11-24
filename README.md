@@ -8,19 +8,26 @@
 
 ## Getting Started
 
+Fork and clone the repository.
+
+```bash
+git clone https://github.com/memochou1993/my-profile
+cd my-profile
+```
+
 Install dependencies.
 
 ```bash
 npm ci
 ```
 
-Compiles and hot-reloads for development.
+Compile for development.
 
 ```bash
 npm run dev
 ```
 
-Generates static project.
+Generate static project for production.
 
 ```bash
 npm run build
@@ -45,7 +52,7 @@ Update `assets/config.json` file.
     "author": "your name",
     "title": "your website title",
     "description": "your website description",
-    "image": "your website image"
+    "image": "your website image path"
   },
   "profile": {
     "name": "your name",
@@ -135,3 +142,7 @@ docker compose up -d
 <a href="https://github.com/memochou1993/my-profile/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=memochou1993/my-profile" />
 </a>
+
+## License
+
+[MIT](LICENSE)

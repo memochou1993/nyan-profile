@@ -2,24 +2,24 @@
   "theme": {
     "mode": "dark",
     "light": {
-      "background": "#93c5fd"
+      "background": "#d1d5db"
     },
     "dark": {
       "background": "#111827"
     }
   },
   "meta": {
-    "author": "Memo Chou",
-    "title": "Memo's Profile",
-    "description": "The complete developer platform to build, scale, and deliver secure software.",
-    "image": "https://github.com/memochou1993.png"
+    "author": "King Nyan II",
+    "title": "King Nyan II's Profile",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://github.com/kingnyan2.png"
   },
   "profile": {
-    "name": "Memo Chou",
-    "organization": "",
-    "email": "memochou1993@gmail.com",
-    "location": "Taipei, Taiwan",
-    "url": "https://profile.epoch.tw"
+    "name": "King Nyan II",
+    "organization": "Buckingnyan Palace",
+    "email": "kingnyan2@gmail.com",
+    "location": "The United Kingdom of Nyan",
+    "url": "https://kingnyan2.com"
   },
   "layout": {
     "header": {
@@ -37,22 +37,22 @@
   },
   "socialLinks": {
     "github": {
-      "id": ""
+      "id": "kingnyan2"
     },
     "facebook": {
-      "id": ""
+      "id": "kingnyan2"
     },
     "linkedin": {
-      "id": ""
+      "id": "kingnyan2"
     },
     "instagram": {
-      "id": ""
+      "id": "kingnyan2"
     },
     "telegram": {
-      "id": ""
+      "id": "kingnyan2"
     },
     "twitter": {
-      "id": ""
+      "id": "kingnyan2"
     }
   },
   "googleAnalytics": {

@@ -58,7 +58,7 @@ export default function Profile() {
       </div>
       <div className="flex justify-center">
         <div className="flex flex-col text-slate-800 dark:text-slate-200">
-          <div className="text-4xl font-bold tracking-wider">
+          <div className="text-4xl font-bold tracking-wider text-center">
             {config.profile.name}
           </div>
           <div className="flex flex-col my-4 text-sm">
