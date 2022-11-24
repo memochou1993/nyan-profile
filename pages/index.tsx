@@ -42,7 +42,7 @@ export default function Home() {
             <Heading text="About" />
             <About />
           </main>
-          <Divider id="" />
+          <Divider />
           { config.layout.footer.enabled && <Footer /> }
         </div>
       </div>
