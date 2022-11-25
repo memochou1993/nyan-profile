@@ -5,7 +5,7 @@ import {
   Main,
   NextScript,
 } from 'next/document';
-import config from '../assets/config.json';
+import config from '../nyan.config.json';
 
 export default function Document() {
   return (

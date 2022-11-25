@@ -7,7 +7,7 @@ import {
   faSun,
   faMoon,
 } from '@fortawesome/free-solid-svg-icons';
-import config from '../assets/config.json';
+import config from '../nyan.config.json';
 
 interface Props {
   enabled: boolean;

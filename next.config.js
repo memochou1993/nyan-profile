@@ -1,4 +1,4 @@
-const config = require('./assets/config.json');
+const config = require('./nyan.config.json');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

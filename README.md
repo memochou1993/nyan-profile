@@ -49,7 +49,7 @@ npm run build
 
 ## Configuration
 
-Update `assets/config.json` file.
+Update `nyan.config.json` file.
 
 ```json
 {
@@ -155,7 +155,7 @@ Update `assets/config.json` file.
 
 ### GitHub Pages
 
-Update `assets/config.json` file.
+Update `nyan.config.json` file.
 
 ```json
 {
@@ -173,7 +173,7 @@ git push
 
 ### Docker Compose
 
-Update `assets/config.json` file.
+Update `nyan.config.json` file.
 
 ```json
 {

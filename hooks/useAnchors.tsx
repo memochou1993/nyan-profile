@@ -8,6 +8,5 @@ export default function useAnchors() {
   useEffect(() => {
     setAnchors(Array.from(document.getElementsByClassName('anchor')).map((h) => h.textContent) as Array<string>);
   }, []);
-
   return anchors;
 }

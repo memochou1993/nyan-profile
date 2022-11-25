@@ -11,7 +11,7 @@ import {
   ProjectList,
   Sidebar,
 } from '@/components';
-import config from '../assets/config.json';
+import config from '../nyan.config.json';
 
 export default function Home() {
   useEffect(() => {
