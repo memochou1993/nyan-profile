@@ -101,32 +101,26 @@ npm run build
       "location": "<your_location>",
       "email": "<your_email>",
       "url": "<your_website_url>",
-      "socialLinks": [
-        {
-          "type": "github",
+      "socialLinks": {
+        "github": {
           "id": "<id>"
         },
-        {
-          "type": "facebook",
+        "facebook": {
           "id": "<id>"
         },
-        {
-          "type": "linkedin",
+        "linkedin": {
           "id": "<id>"
         },
-        {
-          "type": "instagram",
+        "instagram": {
           "id": "<id>"
         },
-        {
-          "type": "telegram",
+        "telegram": {
           "id": "<id>"
         },
-        {
-          "type": "twitter",
+        "twitter": {
           "id": "<id>"
         }
-      ]
+      }
     }
   }
 }
