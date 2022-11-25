@@ -12,7 +12,13 @@ import {
 
 const OFFSET = 4 * 12 + 28;
 
-export default function Elevator() {
+interface Props {
+  enabled: boolean;
+}
+
+export default function Elevator({
+  enabled,
+}: Props) {
   const mounted = useRef(false);
   const element = useRef(null);
   const visible = useRef(false);
@@ -34,7 +40,7 @@ export default function Elevator() {
     });
     mounted.current = true;
   }, []);
-  return (
+  return enabled ? (
     <div ref={element} className="absolute transition opacity-0 fade-in-out delay-250">
       <div className="fixed invisible text-right bottom-12 right-12 sm:visible text-slate-700 dark:text-slate-300">
         <div className="flex items-center justify-end">
@@ -61,5 +67,5 @@ export default function Elevator() {
         </nav>
       </div>
     </div>
-  );
+  ) : <template />;
 }

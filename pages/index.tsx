@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Script from 'next/script';
 import {
   About,
-  Divider,
   Footer,
   Header,
   Profile,
@@ -34,15 +33,14 @@ export default function Home() {
       </Head>
       <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
-          { config.components.header.enabled && <Header /> }
-          { config.components.sidebar.enabled && <Sidebar /> }
+          <Header {...config.component.header} />
+          <Sidebar {...config.component.sidebar} />
           <main className="my-12">
-            <Profile />
-            <About />
-            { config.components.projectList.enabled && <ProjectList />}
+            <Profile {...config.component.profile} />
+            <About {...config.component.about} />
+            <ProjectList {...config.component.projectList} />
           </main>
-          <Divider />
-          { config.components.footer.enabled && <Footer /> }
+          <Footer {...config.component.footer} />
         </div>
       </div>
       {config.googleAnalytics.id && (

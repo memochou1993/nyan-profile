@@ -1,13 +1,24 @@
 import React from 'react';
 import ThemeSwitch from './ThemeSwitch';
-import config from '../assets/config.json';
 import {
   useAnchors,
 } from '../hooks';
 
-export default function NavigationBar() {
+interface Props {
+  enabled: boolean;
+  component: {
+    themeSwitch: {
+      enabled: boolean;
+    }
+  };
+}
+
+export default function Header({
+  enabled,
+  component,
+}: Props) {
   const anchors = useAnchors();
-  return (
+  return enabled ? (
     <nav className="flex items-center justify-between text-slate-800 dark:text-slate-200">
       <div>
         {anchors.map((text) => (
@@ -18,7 +29,7 @@ export default function NavigationBar() {
           </a>
         ))}
       </div>
-      { config.components.themeSwitch.enabled && <ThemeSwitch /> }
+      <ThemeSwitch {...component.themeSwitch} />
     </nav>
-  );
+  ) : <template />;
 }

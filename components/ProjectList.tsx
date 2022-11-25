@@ -5,17 +5,30 @@ import Divider from './Divider';
 import Heading from './Heading';
 import LoadMoreButton from './LoadMoreButton';
 import ProjectItem from './ProjectItem';
-import config from '../assets/config.json';
 
-const {
+interface Props {
+  enabled: boolean;
+  title: string;
+  limit: number;
+  items: Array<{
+    name: string;
+    link: string;
+    image: string;
+    tags: Array<string>;
+    button: {
+      text: string;
+    };
+  }>;
+}
+
+export default function ProjectList({
+  enabled,
   title,
   limit,
   items,
-} = config.components.projectList;
-
-export default function ProjectList() {
+}: Props) {
   const [page, setPage] = useState(1);
-  return (
+  return enabled ? (
     <>
       <Divider anchor={title} />
       <Heading text={title} />
@@ -25,7 +38,7 @@ export default function ProjectList() {
           link,
           image,
           tags,
-          action,
+          button,
         }, i) => (
           i < limit * page && (
             <div key={name} className="flex justify-center">
@@ -34,7 +47,7 @@ export default function ProjectList() {
                 link={link}
                 image={image}
                 tags={tags}
-                action={action}
+                button={button}
               />
             </div>
           )
@@ -46,5 +59,5 @@ export default function ProjectList() {
         </div>
       )}
     </>
-  );
+  ) : <template />;
 }

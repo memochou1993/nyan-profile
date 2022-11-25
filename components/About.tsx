@@ -1,14 +1,17 @@
 import React from 'react';
 import Divider from './Divider';
 import Heading from './Heading';
-import config from '../assets/config.json';
 
-const {
+interface Props {
+  enabled: boolean;
+  title: string;
+}
+
+export default function About({
+  enabled,
   title,
-} = config.components.about;
-
-export default function About() {
-  return (
+}: Props) {
+  return enabled ? (
     <>
       <Divider anchor={title} />
       <Heading text={title} />
@@ -25,5 +28,5 @@ export default function About() {
         </p>
       </div>
     </>
-  );
+  ) : <template />;
 }

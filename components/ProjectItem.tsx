@@ -10,7 +10,9 @@ interface Props {
   link: string;
   image: string;
   tags: Array<string>;
-  action: string;
+  button: {
+    text: string;
+  };
 }
 
 export default function Card({
@@ -18,7 +20,7 @@ export default function Card({
   link,
   image,
   tags,
-  action,
+  button,
 }: Props) {
   return (
     <div className="max-w-sm border rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
@@ -43,7 +45,7 @@ export default function Card({
         <div className="flex justify-end">
           <a href={link} target="_blank" rel="noreferrer" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-xl ring-slate-400 hover:ring-1 bg-gradient-to-br from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-500 active:from-blue-900 active:to-blue-500">
             <span className="mr-2">
-              {action}
+              {button.text}
             </span>
             <FontAwesomeIcon icon={faArrowRight} className="w-3 text-white" />
           </a>

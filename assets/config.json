@@ -15,19 +15,49 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": "https://github.com/kingnyan2.png"
   },
-  "profile": {
-    "name": "King Nyan II",
-    "organization": "Buckingnyan Palace",
-    "email": "kingnyan2@gmail.com",
-    "location": "The United Kingdom of Great Nyan",
-    "url": "https://kingnyan2.com"
-  },
-  "components": {
-    "header": {
-      "enabled": true
+  "component": {
+    "profile": {
+      "enabled": true,
+      "avatar": "https://github.com/kingnyan2.png",
+      "name": "King Nyan II",
+      "organization": "Buckingnyan Palace",
+      "location": "The United Kingdom of Great Nyan",
+      "email": "kingnyan2@gmail.com",
+      "url": "https://kingnyan2.com",
+      "socialLinks": [
+        {
+          "type": "github",
+          "id": "kingnyan2"
+        },
+        {
+          "type": "facebook",
+          "id": "kingnyan2"
+        },
+        {
+          "type": "linkedin",
+          "id": "kingnyan2"
+        },
+        {
+          "type": "instagram",
+          "id": "kingnyan2"
+        },
+        {
+          "type": "telegram",
+          "id": "kingnyan2"
+        },
+        {
+          "type": "twitter",
+          "id": "kingnyan2"
+        }
+      ]
     },
-    "themeSwitch": {
-      "enabled": true
+    "header": {
+      "enabled": true,
+      "component": {
+        "themeSwitch": {
+          "enabled": true
+        }
+      }
     },
     "sidebar": {
       "enabled": true
@@ -52,29 +82,11 @@
             "2022",
             "JavaScript"
           ],
-          "action": "Demo"
+          "button": {
+            "text": "Demo"
+          }
         }
       ]
-    }
-  },
-  "socialLinks": {
-    "github": {
-      "id": "kingnyan2"
-    },
-    "facebook": {
-      "id": "kingnyan2"
-    },
-    "linkedin": {
-      "id": "kingnyan2"
-    },
-    "instagram": {
-      "id": "kingnyan2"
-    },
-    "telegram": {
-      "id": "kingnyan2"
-    },
-    "twitter": {
-      "id": "kingnyan2"
     }
   },
   "googleFonts": {

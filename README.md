@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-Fork and clone the repository.
+Clone the repository.
 
 ```bash
 git clone https://github.com/memochou1993/nyan-profile
@@ -39,68 +39,100 @@ Update `assets/config.json` file.
 
 ```json
 {
-  "basePath": "/nyan-profile",
+  "basePath": "/<repository_name>",
   "theme": {
-    "mode": "light|dark",
+    "mode": "<light|dark>",
     "light": {
-      "background": "#93c5fd"
+      "background": "<light_color>"
     },
     "dark": {
-      "background": "#111827"
+      "background": "<dark_color>"
     }
   },
   "meta": {
-    "author": "your name",
-    "title": "your website title",
-    "description": "your website description",
-    "image": "your website image path"
+    "author": "<name>",
+    "title": "<website_title>",
+    "description": "<website_description>",
+    "image": "<website_image_path>"
   },
-  "profile": {
-    "name": "your name",
-    "organization": "your organization",
-    "email": "your email",
-    "location": "your location",
-    "url": "your website url"
-  },
-  "layout": {
-    "header": {
-      "enabled": true
+  "component": {
+    "profile": {
+      "enabled": true,
+      "avatar": "<avatar_image_path>",
+      "name": "<name>",
+      "organization": "<organization>",
+      "location": "<location>",
+      "email": "<email>",
+      "url": "<website_url>",
+      "socialLinks": [
+        {
+          "type": "github",
+          "id": "<id>"
+        },
+        {
+          "type": "facebook",
+          "id": "<id>"
+        },
+        {
+          "type": "linkedin",
+          "id": "<id>"
+        },
+        {
+          "type": "instagram",
+          "id": "<id>"
+        },
+        {
+          "type": "telegram",
+          "id": "<id>"
+        },
+        {
+          "type": "twitter",
+          "id": "<id>"
+        }
+      ]
     },
-    "themeSwitch": {
-      "enabled": true
+    "header": {
+      "enabled": true,
+      "component": {
+        "themeSwitch": {
+          "enabled": true
+        }
+      }
     },
     "sidebar": {
       "enabled": true
     },
     "footer": {
       "enabled": true
-    }
-  },
-  "socialLinks": {
-    "github": {
-      "id": ""
     },
-    "facebook": {
-      "id": ""
+    "about": {
+      "enabled": true,
+      "title": "About"
     },
-    "linkedin": {
-      "id": ""
-    },
-    "instagram": {
-      "id": ""
-    },
-    "telegram": {
-      "id": ""
-    },
-    "twitter": {
-      "id": ""
+    "projectList": {
+      "enabled": true,
+      "title": "Projects",
+      "limit": 3,
+      "items": [
+        {
+          "name": "<project_name>",
+          "link": "<project_link>",
+          "image": "<project_image>",
+          "tags": [
+            "<project_tag>"
+          ],
+          "button": {
+            "text": "<button_text>"
+          }
+        }
+      ]
     }
   },
   "googleFonts": {
-    "family": "Roboto"
+    "family": "<font_family>"
   },
   "googleAnalytics": {
-    "id": ""
+    "id": "<ga4_measurement_id>"
   }
 }
 ```
@@ -113,7 +145,7 @@ Update `assets/config.json` file.
 
 ```json
 {
-  "basePath": "/nyan-profile"
+  "basePath": "/<repository_name>"
 }
 ```
 

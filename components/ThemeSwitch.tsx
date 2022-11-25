@@ -9,7 +9,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import config from '../assets/config.json';
 
-export default function ThemeSwitch() {
+interface Props {
+  enabled: boolean;
+}
+
+export default function ThemeSwitch({
+  enabled,
+}: Props) {
   const [mode, setMode] = useState(config.theme.mode);
   const isDark = useMemo(() => mode === 'dark', [mode]);
   const handleClick = () => {
@@ -17,9 +23,9 @@ export default function ThemeSwitch() {
     document.getElementById('app')?.classList.toggle('dark');
     setMode(isDark ? 'light' : 'dark');
   };
-  return (
+  return enabled ? (
     <button type="button" onClick={handleClick}>
       <FontAwesomeIcon icon={isDark ? faSun : faMoon} className="w-6 h-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
     </button>
-  );
+  ) : <template />;
 }
