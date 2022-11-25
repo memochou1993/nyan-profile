@@ -83,10 +83,10 @@
       ]
     },
     "articleList": {
-      "enabled": false,
+      "enabled": true,
       "title": "Articles",
       "limit": 10,
-      "source": "",
+      "source": "atom.xml",
       "entrySpec": {
         "key": "entry",
         "fields": {

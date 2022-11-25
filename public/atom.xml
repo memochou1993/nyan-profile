@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>King Nyan II's Blog</title>
+  <link href="https://blog.kingnyan2.com/atom.xml" rel="self"/>
+  <link href="https://blog.kingnyan2.com/"/>
+  <updated>2022-11-23T14:00:00.000Z</updated>
+  <id>https://blog.kingnyan2.com/</id>
+  <author>
+    <name>King Nyan II</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <entry>
+    <title>My Nyan Profile</title>
+    <link href="./"/>
+    <published>2022-11-22T00:00:00.000Z</published>
+    <updated>2022-11-23T00:00:00.000Z</updated>
+  </entry>
+</feed>
