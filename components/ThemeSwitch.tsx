@@ -11,13 +11,13 @@ import {
 } from '../constants';
 import config from '../nyan.config.json';
 
-interface Props {
+interface ThemeSwitchProps {
   enabled: boolean;
 }
 
 export default function ThemeSwitch({
   enabled,
-}: Props) {
+}: ThemeSwitchProps) {
   const [mode, setMode] = useState(config.theme.mode);
   const handleClick = () => {
     document.documentElement.classList.toggle(MODE_DARK);

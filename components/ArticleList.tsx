@@ -29,12 +29,12 @@ const fetchArticles = async (url: string, { key, fields }: EntrySpecType) => {
   }));
 };
 
-interface Props {
+interface ArticleListProps {
   enabled: boolean;
   title: string;
   limit: number;
   source: string;
-  entrySpec: EntrySpecType,
+  entrySpec: EntrySpecType;
 }
 
 export default function ArticleList({
@@ -43,7 +43,7 @@ export default function ArticleList({
   limit,
   source,
   entrySpec,
-}: Props) {
+}: ArticleListProps) {
   const mounted = useRef(false);
   const [articles, setArticles] = useState<Array<EntryType>>([]);
   const [page, setPage] = useState(1);

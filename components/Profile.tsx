@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import SocialLinks from './SocialLinks';
 
-interface Props {
+interface ProfileProps {
   enabled: boolean;
   avatar: string;
   name: string;
@@ -29,7 +29,7 @@ export default function Profile({
   email,
   url,
   socialLinks,
-}: Props) {
+}: ProfileProps) {
   return enabled ? (
     <>
       <div className="flex justify-center mb-8 sm:mb-10 md:mb-12">

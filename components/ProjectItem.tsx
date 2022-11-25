@@ -5,7 +5,7 @@ import {
   faArrowRight,
 } from '@fortawesome/free-solid-svg-icons';
 
-interface Props {
+interface ProjectItemProps {
   name: string;
   link: string;
   image: string;
@@ -15,13 +15,13 @@ interface Props {
   };
 }
 
-export default function Card({
+export default function ProjectItem({
   name,
   link,
   image,
   tags,
   button,
-}: Props) {
+}: ProjectItemProps) {
   return (
     <div className="max-w-sm border rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
       <Image alt={name} src={image} width="3000" height="2000" className="rounded-t-xl aspect-[3/2]" />

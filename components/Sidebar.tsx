@@ -12,13 +12,13 @@ import {
 
 const OFFSET = 4 * 12 + 28;
 
-interface Props {
+interface SidebarProps {
   enabled: boolean;
 }
 
-export default function Elevator({
+export default function Sidebar({
   enabled,
-}: Props) {
+}: SidebarProps) {
   const mounted = useRef(false);
   const element = useRef(null);
   const visible = useRef(false);

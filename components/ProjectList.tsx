@@ -6,7 +6,7 @@ import Heading from './Heading';
 import LoadMoreButton from './LoadMoreButton';
 import ProjectItem from './ProjectItem';
 
-interface Props {
+interface ProjectListProps {
   enabled: boolean;
   title: string;
   limit: number;
@@ -26,7 +26,7 @@ export default function ProjectList({
   title,
   limit,
   items,
-}: Props) {
+}: ProjectListProps) {
   const [page, setPage] = useState(1);
   return enabled ? (
     <>

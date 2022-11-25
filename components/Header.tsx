@@ -4,7 +4,7 @@ import {
   useAnchors,
 } from '../hooks';
 
-interface Props {
+interface HeaderProps {
   enabled: boolean;
   components: {
     themeSwitch: any;
@@ -14,7 +14,7 @@ interface Props {
 export default function Header({
   enabled,
   components,
-}: Props) {
+}: HeaderProps) {
   const anchors = useAnchors();
   return enabled ? (
     <nav className="flex items-center justify-between text-slate-800 dark:text-slate-200">

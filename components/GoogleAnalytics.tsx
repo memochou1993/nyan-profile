@@ -1,7 +1,7 @@
 import React from 'react';
 import Script from 'next/script';
 
-interface Props {
+interface GoogleAnalyticsProps {
   enabled: boolean;
   id: string;
 }
@@ -9,7 +9,7 @@ interface Props {
 export default function GoogleAnalytics({
   enabled,
   id,
-}: Props) {
+}: GoogleAnalyticsProps) {
   return enabled ? (
     <>
       <Script

@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Props {
+interface GoogleFontsProps {
   enabled: boolean;
   family: string;
 }
@@ -8,7 +8,7 @@ interface Props {
 export default function GoogleFonts({
   enabled,
   family,
-}: Props) {
+}: GoogleFontsProps) {
   return enabled ? (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />

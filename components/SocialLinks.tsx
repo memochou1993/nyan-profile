@@ -26,17 +26,17 @@ const map: {
   twitter: { icon: faTwitter, link: 'https://twitter.com' },
 };
 
-interface Props {
+interface SocialLinksProps {
   items: {
     [someStrKeyWhichIsDynamic: string]: {
-      id: string,
-    },
+      id: string;
+    };
   };
 }
 
 export default function SocialLinks({
   items,
-}: Props) {
+}: SocialLinksProps) {
   const { length } = Object.values(items).filter(({ id }) => id);
   return (
     <div className={`flex items-center ${length > 4 ? 'justify-between' : 'justify-evenly'}`}>

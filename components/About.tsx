@@ -2,7 +2,7 @@ import React from 'react';
 import Divider from './Divider';
 import Heading from './Heading';
 
-interface Props {
+interface AboutProps {
   enabled: boolean;
   title: string;
 }
@@ -10,7 +10,7 @@ interface Props {
 export default function About({
   enabled,
   title,
-}: Props) {
+}: AboutProps) {
   return enabled ? (
     <>
       <Divider anchor={title} />

@@ -1,13 +1,13 @@
 import React from 'react';
 import Divider from './Divider';
 
-interface Props {
+interface FooterProps {
   enabled: boolean;
 }
 
 export default function Footer({
   enabled,
-}: Props) {
+}: FooterProps) {
   return enabled ? (
     <>
       <Divider />
