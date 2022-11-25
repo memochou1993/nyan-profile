@@ -13,19 +13,13 @@ import {
 } from '../constants';
 import config from '../nyan.config.json';
 
-const {
-  mode,
-  dark,
-  light,
-} = config.theme;
-
 export default function Document() {
   return (
-    <Html style={{ background: mode === MODE_DARK ? dark.background : light.background }}>
+    <Html className={config.theme.mode}>
       <Head>
         <GoogleFonts {...config.components.googleFonts} />
       </Head>
-      <body>
+      <body className={config.theme.mode === MODE_DARK ? 'bg-dark-bg' : 'bg-light-bg'}>
         <Main />
         <NextScript />
       </body>

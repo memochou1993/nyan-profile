@@ -5,7 +5,7 @@ interface Props {
   family: string;
 }
 
-export default function GoogleAnalytics({
+export default function GoogleFonts({
   enabled,
   family,
 }: Props) {

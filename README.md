@@ -141,13 +141,14 @@ Update `nyan.config.json` file.
         }
       ]
     },
+    "googleFonts": {
+      "enabled": true,
+      "family": "<font_family>"
+    },
     "googleAnalytics": {
       "enabled": true,
       "id": "<ga4_measurement_id>"
     }
-  },
-  "googleFonts": {
-    "family": "<font_family>"
   }
 }
 ```

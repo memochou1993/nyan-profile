@@ -18,35 +18,17 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const map: {
-  [someStrKeyWhichIsDynamic:string]: {
+  [someStrKeyWhichIsDynamic: string]: {
     icon: IconDefinition,
     link: string,
   },
 } = {
-  github: {
-    icon: faGithub,
-    link: 'https://github.com',
-  },
-  facebook: {
-    icon: faFacebook,
-    link: 'https://www.facebook.com',
-  },
-  linkedin: {
-    icon: faLinkedin,
-    link: 'https://linkedin.com/in',
-  },
-  instagram: {
-    icon: faInstagram,
-    link: 'https://www.instagram.com',
-  },
-  telegram: {
-    icon: faTelegram,
-    link: 'https://telegram.me',
-  },
-  twitter: {
-    icon: faTwitter,
-    link: 'https://twitter.com',
-  },
+  github: { icon: faGithub, link: 'https://github.com' },
+  facebook: { icon: faFacebook, link: 'https://www.facebook.com' },
+  linkedin: { icon: faLinkedin, link: 'https://linkedin.com/in' },
+  instagram: { icon: faInstagram, link: 'https://www.instagram.com' },
+  telegram: { icon: faTelegram, link: 'https://telegram.me' },
+  twitter: { icon: faTwitter, link: 'https://twitter.com' },
 };
 
 interface Props {
@@ -58,7 +40,7 @@ interface Props {
   email: string;
   url: string;
   socialLinks: {
-    [someStrKeyWhichIsDynamic:string]: {
+    [someStrKeyWhichIsDynamic: string]: {
       id: string,
     },
   };
