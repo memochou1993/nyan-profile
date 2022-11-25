@@ -141,6 +141,20 @@ Update `nyan.config.json` file.
         }
       ]
     },
+    "articleList": {
+      "enabled": false,
+      "title": "Articles",
+      "limit": 10,
+      "source": "<rss_xml_path>",
+      "entrySpec": {
+        "key": "<entry_key>",
+        "fields": {
+          "title": "<title_key>",
+          "link": "<link_key>",
+          "published": "<published_date_key>"
+        }
+      }
+    },
     "googleFonts": {
       "enabled": true,
       "family": "<font_family>"

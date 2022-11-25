@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import {
+  ArticleList,
   About,
   Footer,
   Header,
@@ -24,6 +25,7 @@ export default function Home() {
             <Profile {...config.components.profile} />
             <About {...config.components.about} />
             <ProjectList {...config.components.projectList} />
+            <ArticleList {...config.components.articleList} />
           </main>
           <Footer {...config.components.footer} />
         </div>

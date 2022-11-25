@@ -82,6 +82,20 @@
         }
       ]
     },
+    "articleList": {
+      "enabled": false,
+      "title": "Articles",
+      "limit": 10,
+      "source": "",
+      "entrySpec": {
+        "key": "entry",
+        "fields": {
+          "title": "title",
+          "link": "link",
+          "published": "published"
+        }
+      }
+    },
     "googleFonts": {
       "enabled": true,
       "family": "Roboto"
