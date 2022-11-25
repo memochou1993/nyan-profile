@@ -1,5 +1,4 @@
 import React, {
-  useMemo,
   useState,
 } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +6,16 @@ import {
   faSun,
   faMoon,
 } from '@fortawesome/free-solid-svg-icons';
+import {
+  MODE_DARK,
+} from '../constants';
 import config from '../nyan.config.json';
+
+const {
+  mode,
+  dark,
+  light,
+} = config.theme;
 
 interface Props {
   enabled: boolean;
@@ -16,12 +24,11 @@ interface Props {
 export default function ThemeSwitch({
   enabled,
 }: Props) {
-  const [mode, setMode] = useState(config.theme.mode);
-  const isDark = useMemo(() => mode === 'dark', [mode]);
+  const [isDark, setIsDark] = useState(mode === MODE_DARK);
   const handleClick = () => {
-    document.documentElement.style.setProperty('background-color', isDark ? config.theme.light.background : config.theme.dark.background);
-    document.getElementById('app')?.classList.toggle('dark');
-    setMode(isDark ? 'light' : 'dark');
+    document.documentElement.style.setProperty('background-color', isDark ? light.background : dark.background);
+    document.getElementById('app')?.classList.toggle(MODE_DARK);
+    setIsDark(!isDark);
   };
   return enabled ? (
     <button type="button" onClick={handleClick}>

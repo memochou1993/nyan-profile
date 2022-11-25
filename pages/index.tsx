@@ -1,6 +1,4 @@
-import React, {
-  useEffect,
-} from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 import {
@@ -14,9 +12,6 @@ import {
 import config from '../nyan.config.json';
 
 export default function Home() {
-  useEffect(() => {
-    document.documentElement.style.setProperty('background-color', config.theme.mode === 'dark' ? config.theme.dark.background : config.theme.light.background);
-  }, []);
   return (
     <div id="app" className={config.theme.mode}>
       <Head>

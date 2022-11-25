@@ -5,11 +5,20 @@ import {
   Main,
   NextScript,
 } from 'next/document';
+import {
+  MODE_DARK,
+} from '../constants';
 import config from '../nyan.config.json';
+
+const {
+  mode,
+  dark,
+  light,
+} = config.theme;
 
 export default function Document() {
   return (
-    <Html>
+    <Html style={{ background: mode === MODE_DARK ? dark.background : light.background }}>
       <Head>
         {config.googleFonts.family && (
           <>
