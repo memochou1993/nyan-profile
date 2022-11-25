@@ -1,0 +1,19 @@
+import React from 'react';
+
+interface Props {
+  enabled: boolean;
+  family: string;
+}
+
+export default function GoogleAnalytics({
+  enabled,
+  family,
+}: Props) {
+  return enabled ? (
+    <>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?family=${family}:wght@100;300;400;500;700;900&display=swap`} />
+    </>
+  ) : <template />;
+}

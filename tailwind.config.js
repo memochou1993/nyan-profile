@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        config.googleFonts.family,
+        config.components.googleFonts.family,
         'Helvetica',
         'Arial',
         'sans-serif',
