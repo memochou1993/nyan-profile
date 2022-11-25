@@ -2,17 +2,26 @@
 
 ![Dark Theme](demo.png)
 
-## Demo
+## About
 
-- [https://memochou1993.github.io/nyan-profile/](https://memochou1993.github.io/nyan-profile/)
+Nyan Profile is a simple and extensible scaffold for building personal profile website.
+
+## Features
+
+- Static Generation with Next.js
+- Styling with Tailwind CSS
+- Configurable Layout
+- Dark Mode
+- Google Fonts
+- Google Analytics
+- Deploying to GitHub Pages with GitHub Actions
 
 ## Getting Started
 
-Clone the repository.
+Clone the project.
 
 ```bash
 git clone https://github.com/memochou1993/nyan-profile
-cd nyan-profile
 ```
 
 Install dependencies.
@@ -33,6 +42,11 @@ Generate static project for production.
 npm run build
 ```
 
+## Profiles
+
+- [King Nyan II](https://memochou1993.github.io/nyan-profile/)
+- [Memo Chou](https://profile.epoch.tw)
+
 ## Configuration
 
 Update `assets/config.json` file.
@@ -50,7 +64,7 @@ Update `assets/config.json` file.
     }
   },
   "meta": {
-    "author": "<name>",
+    "author": "<website_author>",
     "title": "<website_title>",
     "description": "<website_description>",
     "image": "<website_image_path>"
@@ -58,12 +72,12 @@ Update `assets/config.json` file.
   "component": {
     "profile": {
       "enabled": true,
-      "avatar": "<avatar_image_path>",
-      "name": "<name>",
-      "organization": "<organization>",
-      "location": "<location>",
-      "email": "<email>",
-      "url": "<website_url>",
+      "avatar": "<your_avatar_image_path>",
+      "name": "<your_name>",
+      "organization": "<your_organization>",
+      "location": "<your_location>",
+      "email": "<your_email>",
+      "url": "<your_website_url>",
       "socialLinks": [
         {
           "type": "github",
@@ -176,7 +190,7 @@ docker compose up -d
 ## Contributors
 
 <a href="https://github.com/memochou1993/nyan-profile/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=memochou1993/nyan-profile" />
+  <img src="https://contrib.rocks/image?repo=memochou1993/nyan-profile" width="50" />
 </a>
 
 ## License
