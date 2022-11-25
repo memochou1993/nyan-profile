@@ -58,7 +58,7 @@ export default function ArticleList({
     <>
       <Divider anchor={title} />
       <Heading text={title} />
-      <div className="w-full px-8 border divide-y divide-slate-500 rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
+      <div className="w-full px-6 border divide-y divide-slate-500 rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
         {articles.map(({ title, link, published }, i) => (
           i < limit * page && (
             <div key={title} className="px-1 py-4 text-slate-800 dark:text-slate-200">
