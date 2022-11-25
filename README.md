@@ -49,11 +49,18 @@ npm run build
 
 ## Configuration
 
-Update `nyan.config.json` file.
+### Base URL
 
 ```json
 {
-  "basePath": "/<repository_name>",
+  "basePath": "/<repository_name>"
+}
+```
+
+### Theme
+
+```json
+{
   "theme": {
     "mode": "<light|dark>",
     "light": {
@@ -62,13 +69,29 @@ Update `nyan.config.json` file.
     "dark": {
       "background": "<dark_color>"
     }
-  },
+  }
+}
+```
+
+### Meta
+
+```json
+{
   "meta": {
     "author": "<website_author>",
     "title": "<website_title>",
     "description": "<website_description>",
     "image": "<website_image_path>"
-  },
+  }
+}
+```
+
+### Components
+
+#### Profile
+
+```json
+{
   "components": {
     "profile": {
       "enabled": true,
@@ -104,7 +127,16 @@ Update `nyan.config.json` file.
           "id": "<id>"
         }
       ]
-    },
+    }
+  }
+}
+```
+
+#### Header
+
+```json
+{
+  "components": {
     "header": {
       "enabled": true,
       "components": {
@@ -112,17 +144,53 @@ Update `nyan.config.json` file.
           "enabled": true
         }
       }
-    },
+    }
+  }
+}
+```
+
+#### Sidebar
+
+```json
+{
+  "components": {
     "sidebar": {
       "enabled": true
-    },
+    }
+  }
+}
+```
+
+#### Footer
+
+```json
+{
+  "components": {
     "footer": {
       "enabled": true
-    },
+    }
+  }
+}
+```
+
+#### About
+
+```json
+{
+  "components": {
     "about": {
       "enabled": true,
       "title": "About"
-    },
+    }
+  }
+}
+```
+
+#### ProjectList
+
+```json
+{
+  "components": {
     "projectList": {
       "enabled": true,
       "title": "Projects",
@@ -140,7 +208,16 @@ Update `nyan.config.json` file.
           }
         }
       ]
-    },
+    }
+  }
+}
+```
+
+#### ArticleList
+
+```json
+{
+  "components": {
     "articleList": {
       "enabled": false,
       "title": "Articles",
@@ -154,11 +231,29 @@ Update `nyan.config.json` file.
           "published": "<published_date_key>"
         }
       }
-    },
+    }
+  }
+}
+```
+
+#### GoogleFonts
+
+```json
+{
+  "components": {
     "googleFonts": {
       "enabled": true,
       "family": "<font_family>"
-    },
+    }
+  }
+}
+```
+
+#### GoogleAnalytics
+
+```json
+{
+  "components": {
     "googleAnalytics": {
       "enabled": true,
       "id": "<ga4_measurement_id>"
