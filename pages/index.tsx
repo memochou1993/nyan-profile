@@ -18,7 +18,7 @@ export default function Home() {
         <title>{config.meta.title}</title>
       </Head>
       <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
-        <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
+        <div className="container px-16 py-8 mx-auto sm:px-24 sm:py-10 md:px-32 md:py-12">
           <Header {...config.components.header} />
           <Sidebar {...config.components.sidebar} />
           <main className="my-12">
