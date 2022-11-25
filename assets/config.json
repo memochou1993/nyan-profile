@@ -24,32 +24,26 @@
       "location": "The United Kingdom of Great Nyan",
       "email": "kingnyan2@gmail.com",
       "url": "https://kingnyan2.com",
-      "socialLinks": [
-        {
-          "type": "github",
+      "socialLinks": {
+        "github": {
           "id": "kingnyan2"
         },
-        {
-          "type": "facebook",
+        "facebook": {
           "id": "kingnyan2"
         },
-        {
-          "type": "linkedin",
+        "linkedin": {
           "id": "kingnyan2"
         },
-        {
-          "type": "instagram",
+        "instagram": {
           "id": "kingnyan2"
         },
-        {
-          "type": "telegram",
+        "telegram": {
           "id": "kingnyan2"
         },
-        {
-          "type": "twitter",
+        "twitter": {
           "id": "kingnyan2"
         }
-      ]
+      }
     },
     "header": {
       "enabled": true,

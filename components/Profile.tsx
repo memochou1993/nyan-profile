@@ -20,32 +20,32 @@ import {
 const map: {
   [someStrKeyWhichIsDynamic:string]: {
     icon: IconDefinition,
-    url: string,
+    link: string,
   },
 } = {
   github: {
     icon: faGithub,
-    url: 'https://github.com',
+    link: 'https://github.com',
   },
   facebook: {
     icon: faFacebook,
-    url: 'https://www.facebook.com',
+    link: 'https://www.facebook.com',
   },
   linkedin: {
     icon: faLinkedin,
-    url: 'https://linkedin.com/in',
+    link: 'https://linkedin.com/in',
   },
   instagram: {
     icon: faInstagram,
-    url: 'https://www.instagram.com',
+    link: 'https://www.instagram.com',
   },
   telegram: {
     icon: faTelegram,
-    url: 'https://telegram.me',
+    link: 'https://telegram.me',
   },
   twitter: {
     icon: faTwitter,
-    url: 'https://twitter.com',
+    link: 'https://twitter.com',
   },
 };
 
@@ -57,10 +57,11 @@ interface Props {
   location: string;
   email: string;
   url: string;
-  socialLinks: Array<{
-    type: string;
-    id: string;
-  }>;
+  socialLinks: {
+    [someStrKeyWhichIsDynamic:string]: {
+      id: string,
+    },
+  };
 }
 
 export default function Profile({
@@ -129,14 +130,18 @@ export default function Profile({
               </div>
             )}
           </div>
-          <div className={`flex items-center ${socialLinks.filter(({ id }) => id).length > 4 ? 'justify-between' : 'justify-evenly'}`}>
-            {socialLinks.map(({ type, id }) => (
-              enabled && (
-                <a key={type} href={`${map[type].url}/${id}`} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={map[type].icon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
-                </a>
-              )
-            ))}
+          <div className={`flex items-center ${Object.values(socialLinks).filter(({ id }) => id).length > 4 ? 'justify-between' : 'justify-evenly'}`}>
+            {Object.keys(socialLinks).map((type) => {
+              const { id } = socialLinks[type];
+              const { icon, link } = map[type];
+              return (
+                id && (
+                  <a key={type} href={`${link}/${id}`} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={icon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
+                  </a>
+                )
+              );
+            })}
           </div>
         </div>
       </div>
