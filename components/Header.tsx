@@ -7,9 +7,7 @@ import {
 interface Props {
   enabled: boolean;
   components: {
-    themeSwitch: {
-      enabled: boolean;
-    }
+    themeSwitch: any;
   };
 }
 
