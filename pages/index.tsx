@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import Script from 'next/script';
 import {
   About,
   Footer,
+  GoogleAnalytics,
   Header,
   Profile,
   ProjectList,
@@ -38,23 +38,7 @@ export default function Home() {
           <Footer {...config.components.footer} />
         </div>
       </div>
-      {config.googleAnalytics.id && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.id}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', ${config.googleAnalytics.id});
-            `}
-          </Script>
-        </>
-      )}
+      <GoogleAnalytics {...config.components.googleAnalytics} />
     </div>
   );
 }

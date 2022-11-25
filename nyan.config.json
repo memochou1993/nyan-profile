@@ -81,12 +81,13 @@
           }
         }
       ]
+    },
+    "googleAnalytics": {
+      "enabled": true,
+      "id": "G-RPFTNCY0Q6"
     }
   },
   "googleFonts": {
     "family": "Roboto"
-  },
-  "googleAnalytics": {
-    "id": ""
   }
 }
