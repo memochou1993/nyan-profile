@@ -6,7 +6,7 @@ import {
 
 interface Props {
   enabled: boolean;
-  component: {
+  components: {
     themeSwitch: {
       enabled: boolean;
     }
@@ -15,7 +15,7 @@ interface Props {
 
 export default function Header({
   enabled,
-  component,
+  components,
 }: Props) {
   const anchors = useAnchors();
   return enabled ? (
@@ -29,7 +29,7 @@ export default function Header({
           </a>
         ))}
       </div>
-      <ThemeSwitch {...component.themeSwitch} />
+      <ThemeSwitch {...components.themeSwitch} />
     </nav>
   ) : <template />;
 }

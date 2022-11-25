@@ -69,7 +69,7 @@ Update `assets/config.json` file.
     "description": "<website_description>",
     "image": "<website_image_path>"
   },
-  "component": {
+  "components": {
     "profile": {
       "enabled": true,
       "avatar": "<your_avatar_image_path>",
@@ -107,7 +107,7 @@ Update `assets/config.json` file.
     },
     "header": {
       "enabled": true,
-      "component": {
+      "components": {
         "themeSwitch": {
           "enabled": true
         }

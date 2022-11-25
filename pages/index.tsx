@@ -33,14 +33,14 @@ export default function Home() {
       </Head>
       <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
-          <Header {...config.component.header} />
-          <Sidebar {...config.component.sidebar} />
+          <Header {...config.components.header} />
+          <Sidebar {...config.components.sidebar} />
           <main className="my-12">
-            <Profile {...config.component.profile} />
-            <About {...config.component.about} />
-            <ProjectList {...config.component.projectList} />
+            <Profile {...config.components.profile} />
+            <About {...config.components.about} />
+            <ProjectList {...config.components.projectList} />
           </main>
-          <Footer {...config.component.footer} />
+          <Footer {...config.components.footer} />
         </div>
       </div>
       {config.googleAnalytics.id && (

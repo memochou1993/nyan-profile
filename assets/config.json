@@ -15,7 +15,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": "https://github.com/kingnyan2.png"
   },
-  "component": {
+  "components": {
     "profile": {
       "enabled": true,
       "avatar": "https://github.com/kingnyan2.png",
@@ -53,7 +53,7 @@
     },
     "header": {
       "enabled": true,
-      "component": {
+      "components": {
         "themeSwitch": {
           "enabled": true
         }
