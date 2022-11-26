@@ -18,10 +18,47 @@ Nyan Profile is a simple and extensible scaffold for building personal profile w
 
 ## Getting Started
 
+### Automatic Setup
+
+Create a new project by running the following command.
+
+```bash
+npm init @memochou1993/nyan-profile
+```
+
+Change directory into project.
+
+```bash
+cd nyan-profile
+```
+
+Start the development server.
+
+```bash
+npm run dev
+```
+
+### Manual Setup
+
 Clone the project.
 
 ```bash
-git clone https://github.com/memochou1993/nyan-profile
+git clone git@github.com:memochou1993/nyan-profile.git
+```
+
+Change directory into project.
+
+```bash
+cd nyan-profile
+```
+
+Initialize a new Git repository.
+
+```bash
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit"
 ```
 
 Install dependencies.
@@ -30,16 +67,10 @@ Install dependencies.
 npm ci
 ```
 
-Compile for development.
+Start the development server.
 
 ```bash
 npm run dev
-```
-
-Generate static project for production.
-
-```bash
-npm run build
 ```
 
 ## Profiles
@@ -260,6 +291,8 @@ npm run build
 
 ### GitHub Pages
 
+Enable GitHub Actions for the repository through the Actions tab.
+
 Update `nyan.config.json` file.
 
 ```json
@@ -268,7 +301,7 @@ Update `nyan.config.json` file.
 }
 ```
 
-Push to GitHub.
+Commit and push changes to GitHub.
 
 ```bash
 git add .
