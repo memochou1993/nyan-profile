@@ -30,13 +30,13 @@ Nyan Profile is a simple and extensible scaffold for building personal profile w
 Create a new project by running the following command.
 
 ```bash
-npm init @memochou1993/nyan-profile
+npm init @memochou1993/nyan-profile my-profile
 ```
 
 Change directory into project.
 
 ```bash
-cd nyan-profile
+cd my-profile
 ```
 
 Start the development server.
@@ -80,7 +80,7 @@ Start the development server.
 npm run dev
 ```
 
-## Profiles
+## Showcase
 
 - [King Nyan II](https://memochou1993.github.io/nyan-profile/)
 - [Memo Chou](https://profile.epoch.tw)
@@ -298,9 +298,9 @@ npm run dev
 
 ### GitHub Pages
 
-Enable GitHub Actions for the repository through the Actions tab.
+Enable GitHub Actions for the repository.
 
-Update `nyan.config.json` file.
+Set `basePath` field to repository name in `nyan.config.json`.
 
 ```json
 {
@@ -324,7 +324,7 @@ Copy `.env.example` to `.env`.
 APP_PORT=3000
 ```
 
-Update `nyan.config.json` file.
+Set `basePath` field to empty string in `nyan.config.json`.
 
 ```json
 {
