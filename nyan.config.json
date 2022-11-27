@@ -94,7 +94,7 @@
       "enabled": true,
       "title": "Articles",
       "limit": 10,
-      "source": "atom.xml",
+      "source": "https://memochou1993.github.io/nyan-profile/atom.xml",
       "entrySpec": {
         "key": "entry",
         "fields": {
