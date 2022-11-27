@@ -10,10 +10,17 @@ Nyan Profile is a simple and extensible scaffold for building personal profile w
 
 - Static Generation with Next.js
 - Styling with Tailwind CSS
-- Configurable Layout
-- Dark Mode
-- Google Fonts
-- Google Analytics
+- Configurable Components
+  - Profile
+  - Header
+    - Theme Switch
+  - Sidebar
+  - Footer
+  - About
+  - Google Fonts
+  - Google Analytics
+  - Project List
+  - Article List
 - Deploying to GitHub Pages with GitHub Actions
 
 ## Getting Started
