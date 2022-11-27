@@ -318,6 +318,12 @@ git push
 
 ### Docker Compose
 
+Copy `.env.example` to `.env`.
+
+```env
+APP_PORT=3000
+```
+
 Update `nyan.config.json` file.
 
 ```json
