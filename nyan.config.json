@@ -63,6 +63,14 @@
       "enabled": true,
       "title": "About"
     },
+    "googleFonts": {
+      "enabled": true,
+      "family": "Roboto"
+    },
+    "googleAnalytics": {
+      "enabled": true,
+      "id": "G-RPFTNCY0Q6"
+    },
     "projectList": {
       "enabled": true,
       "title": "Projects",
@@ -95,14 +103,6 @@
           "published": "published"
         }
       }
-    },
-    "googleFonts": {
-      "enabled": true,
-      "family": "Roboto"
-    },
-    "googleAnalytics": {
-      "enabled": true,
-      "id": "G-RPFTNCY0Q6"
     }
   }
 }

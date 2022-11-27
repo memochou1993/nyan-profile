@@ -41,15 +41,14 @@ export default function ProjectList({
           button,
         }, i) => (
           i < limit * page && (
-            <div key={name} className="flex justify-center">
-              <ProjectItem
-                name={name}
-                link={link}
-                image={image}
-                tags={tags}
-                button={button}
-              />
-            </div>
+            <ProjectItem
+              key={name}
+              name={name}
+              link={link}
+              image={image}
+              tags={tags}
+              button={button}
+            />
           )
         ))}
       </div>

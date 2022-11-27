@@ -211,6 +211,32 @@ npm run dev
 }
 ```
 
+#### GoogleFonts
+
+```json
+{
+  "components": {
+    "googleFonts": {
+      "enabled": true,
+      "family": "<font_family>"
+    }
+  }
+}
+```
+
+#### GoogleAnalytics
+
+```json
+{
+  "components": {
+    "googleAnalytics": {
+      "enabled": true,
+      "id": "<ga4_measurement_id>"
+    }
+  }
+}
+```
+
 #### ProjectList
 
 ```json
@@ -256,32 +282,6 @@ npm run dev
           "published": "<published_date_key>"
         }
       }
-    }
-  }
-}
-```
-
-#### GoogleFonts
-
-```json
-{
-  "components": {
-    "googleFonts": {
-      "enabled": true,
-      "family": "<font_family>"
-    }
-  }
-}
-```
-
-#### GoogleAnalytics
-
-```json
-{
-  "components": {
-    "googleAnalytics": {
-      "enabled": true,
-      "id": "<ga4_measurement_id>"
     }
   }
 }

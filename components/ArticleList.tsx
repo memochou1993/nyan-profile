@@ -3,6 +3,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
+import ArticleItem from './ArticleItem';
 import Divider from './Divider';
 import Heading from './Heading';
 import LoadMoreButton from './LoadMoreButton';
@@ -59,24 +60,22 @@ export default function ArticleList({
       <Divider anchor={title} />
       <Heading text={title} />
       <div className="w-full px-6 border divide-y divide-slate-500 rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
-        {articles.map(({ title, link, published }, i) => (
+        {articles.map(({
+          title,
+          link,
+          published,
+        }, i) => (
           i < limit * page && (
-            <div key={title} className="px-1 py-4 text-slate-800 dark:text-slate-200">
-              {published && (
-                <span className="mr-4">
-                  {published.slice(0, 10)}
-                </span>
-              )}
-              <a href={link} target="_blank" rel="noreferrer">
-                <span className="hover:underline hover:decoration-1 hover:underline-offset-4">
-                  {title}
-                </span>
-              </a>
-            </div>
+            <ArticleItem
+              key={title}
+              title={title}
+              link={link}
+              published={published}
+            />
           )
         ))}
         {page < articles.length / limit && (
-          <div className="flex justify-center px-1 py-4">
+          <div className="flex justify-center py-4">
             <LoadMoreButton onClick={() => setPage(page + 1)} />
           </div>
         )}
