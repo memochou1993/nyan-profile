@@ -298,9 +298,9 @@ npm run dev
 
 ### GitHub Pages
 
-Enable GitHub Actions for the repository.
+First, set the GitHub Pages source of the project to GitHub Actions.
 
-Set `basePath` field to repository name in `nyan.config.json`.
+Next, set `basePath` field to repository name in `nyan.config.json`.
 
 ```json
 {
@@ -308,7 +308,7 @@ Set `basePath` field to repository name in `nyan.config.json`.
 }
 ```
 
-Commit and push changes to GitHub.
+Then, commit and push changes to GitHub.
 
 ```bash
 git add .
