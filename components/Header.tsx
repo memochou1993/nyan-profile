@@ -17,7 +17,7 @@ export default function Header({
 }: HeaderProps) {
   const anchors = useAnchors();
   return enabled ? (
-    <nav className="flex items-center justify-between text-slate-800 dark:text-slate-200">
+    <nav className="flex items-center justify-evenly text-slate-800 dark:text-slate-200">
       <div>
         {anchors.map((text) => (
           <a key={text} href={`#${String(text).toLowerCase()}`}>
