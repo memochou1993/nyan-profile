@@ -4,11 +4,12 @@ import {
   IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faGithub,
   faFacebook,
-  faLinkedin,
+  faGithub,
   faInstagram,
+  faLinkedin,
   faTelegram,
+  faThreads,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -18,12 +19,13 @@ const map: {
     link: string,
   },
 } = {
-  github: { icon: faGithub, link: 'https://github.com' },
-  facebook: { icon: faFacebook, link: 'https://www.facebook.com' },
-  linkedin: { icon: faLinkedin, link: 'https://linkedin.com/in' },
-  instagram: { icon: faInstagram, link: 'https://www.instagram.com' },
-  telegram: { icon: faTelegram, link: 'https://telegram.me' },
-  twitter: { icon: faTwitter, link: 'https://twitter.com' },
+  github: { icon: faGithub, link: 'https://github.com/' },
+  facebook: { icon: faFacebook, link: 'https://www.facebook.com/' },
+  linkedin: { icon: faLinkedin, link: 'https://linkedin.com/in/' },
+  instagram: { icon: faInstagram, link: 'https://www.instagram.com/' },
+  telegram: { icon: faTelegram, link: 'https://telegram.me/' },
+  twitter: { icon: faTwitter, link: 'https://twitter.com/' },
+  threads: { icon: faThreads, link: 'https://threads.com/@' },
 };
 
 interface SocialLinksProps {
@@ -45,7 +47,7 @@ export default function SocialLinks({
         const { icon, link } = map[type];
         return (
           id && (
-            <a key={type} href={`${link}/${id}`} target="_blank" rel="noreferrer">
+            <a key={type} href={`${link}${id}`} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={icon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
             </a>
           )

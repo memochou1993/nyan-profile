@@ -157,6 +157,9 @@ npm run dev
         },
         "twitter": {
           "id": "<id>"
+        },
+        "threads": {
+          "id": "<id>"
         }
       }
     }
