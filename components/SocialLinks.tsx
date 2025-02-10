@@ -39,15 +39,14 @@ interface SocialLinksProps {
 export default function SocialLinks({
   items,
 }: SocialLinksProps) {
-  const { length } = Object.values(items).filter(({ id }) => id);
   return (
-    <div className={`flex items-center ${length > 4 ? 'justify-between' : 'justify-evenly'}`}>
+    <div className="flex items-center justify-center">
       {Object.keys(items).map((type) => {
         const { id } = items[type];
         const { icon, link } = map[type];
         return (
           id && (
-            <a key={type} href={`${link}${id}`} target="_blank" rel="noreferrer">
+            <a key={type} href={`${link}${id}`} target="_blank" rel="noreferrer" className="mx-2">
               <FontAwesomeIcon icon={icon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
             </a>
           )
